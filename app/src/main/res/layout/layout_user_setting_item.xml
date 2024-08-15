@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_item_user_setting"
+    android:id="@+id/layoutItemSetting"
+    android:layout_margin="@dimen/_3sdp">
+    <ImageView
+        android:id="@+id/avatar_item"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/icon_person"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="@id/layoutItemSetting"
+        app:layout_constraintStart_toStartOf="@id/layoutItemSetting"/>
+    <TextView
+        android:id="@+id/text_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/layoutItemSetting"
+        app:layout_constraintLeft_toRightOf="@id/avatar_item"
+        android:text="Personal Information"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_12sdp"/>
+    <ImageView
+        android:id="@+id/icon_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/layoutItemSetting"
+        app:layout_constraintTop_toTopOf="@id/layoutItemSetting"
+        android:src="@drawable/icon_forward_right"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_13sdp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
